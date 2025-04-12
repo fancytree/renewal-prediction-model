@@ -1,0 +1,212 @@
+{
+    "基本信息": {
+        "行数": 1000,
+        "列数": 17,
+        "列名": [
+            "policy_id",
+            "age",
+            "gender",
+            "birth_region",
+            "insurance_region",
+            "income_level",
+            "education_level",
+            "occupation",
+            "marital_status",
+            "family_members",
+            "policy_type",
+            "policy_term",
+            "premium_amount",
+            "policy_start_date",
+            "policy_end_date",
+            "claim_history",
+            "renewal"
+        ],
+        "数据类型": {
+            "policy_id": "int64",
+            "age": "int64",
+            "gender": "object",
+            "birth_region": "object",
+            "insurance_region": "object",
+            "income_level": "object",
+            "education_level": "object",
+            "occupation": "object",
+            "marital_status": "object",
+            "family_members": "int64",
+            "policy_type": "object",
+            "policy_term": "object",
+            "premium_amount": "float64",
+            "policy_start_date": "datetime64[ns]",
+            "policy_end_date": "datetime64[ns]",
+            "claim_history": "object",
+            "renewal": "object"
+        }
+    },
+    "描述性统计": {
+        "policy_id": {
+            "count": 1000.0,
+            "mean": 10500.5,
+            "min": 10001.0,
+            "25%": 10250.75,
+            "50%": 10500.5,
+            "75%": 10750.25,
+            "max": 11000.0,
+            "std": 288.82
+        },
+        "age": {
+            "count": 1000.0,
+            "mean": 43.82,
+            "min": 18.0,
+            "25%": 31.0,
+            "50%": 44.0,
+            "75%": 56.0,
+            "max": 69.0,
+            "std": 14.99
+        },
+        "family_members": {
+            "count": 1000.0,
+            "mean": 3.42,
+            "min": 1.0,
+            "25%": 2.0,
+            "50%": 3.0,
+            "75%": 5.0,
+            "max": 6.0,
+            "std": 1.71
+        },
+        "premium_amount": {
+            "count": 1000.0,
+            "mean": 17755.03,
+            "min": 7304.0,
+            "25%": 10204.75,
+            "50%": 12170.5,
+            "75%": 14267.0,
+            "max": 70800.0,
+            "std": 16007.09
+        },
+        "policy_start_date": {
+            "count": 1000,
+            "mean": "2017-06-18 03:33:07",
+            "min": "2010-01-12 00:00:00",
+            "25%": "2013-07-23 18:00:00",
+            "50%": "2017-06-10 00:00:00",
+            "75%": "2021-02-17 06:00:00",
+            "max": "2024-11-18 00:00:00",
+            "std": NaN
+        },
+        "policy_end_date": {
+            "count": 1000,
+            "mean": "2032-07-29 04:12:00",
+            "min": "2024-11-29 00:00:00",
+            "25%": "2028-12-11 12:00:00",
+            "50%": "2032-01-19 00:00:00",
+            "75%": "2034-11-30 18:00:00",
+            "max": "2044-11-07 00:00:00",
+            "std": NaN
+        }
+    },
+    "缺失值分析": {
+        "每列缺失值数量": {
+            "policy_id": 0,
+            "age": 0,
+            "gender": 0,
+            "birth_region": 0,
+            "insurance_region": 0,
+            "income_level": 0,
+            "education_level": 0,
+            "occupation": 0,
+            "marital_status": 0,
+            "family_members": 0,
+            "policy_type": 0,
+            "policy_term": 0,
+            "premium_amount": 0,
+            "policy_start_date": 0,
+            "policy_end_date": 0,
+            "claim_history": 0,
+            "renewal": 0
+        },
+        "每列缺失值比例": {
+            "policy_id": 0.0,
+            "age": 0.0,
+            "gender": 0.0,
+            "birth_region": 0.0,
+            "insurance_region": 0.0,
+            "income_level": 0.0,
+            "education_level": 0.0,
+            "occupation": 0.0,
+            "marital_status": 0.0,
+            "family_members": 0.0,
+            "policy_type": 0.0,
+            "policy_term": 0.0,
+            "premium_amount": 0.0,
+            "policy_start_date": 0.0,
+            "policy_end_date": 0.0,
+            "claim_history": 0.0,
+            "renewal": 0.0
+        }
+    },
+    "唯一值分析": {
+        "每列唯一值数量": {
+            "policy_id": 1000,
+            "age": 52,
+            "gender": 2,
+            "birth_region": 33,
+            "insurance_region": 33,
+            "income_level": 3,
+            "education_level": 4,
+            "occupation": 6,
+            "marital_status": 3,
+            "family_members": 6,
+            "policy_type": 9,
+            "policy_term": 4,
+            "premium_amount": 448,
+            "policy_start_date": 912,
+            "policy_end_date": 928,
+            "claim_history": 2,
+            "renewal": 2
+        },
+        "每列唯一值比例": {
+            "policy_id": 100.0,
+            "age": 5.2,
+            "gender": 0.2,
+            "birth_region": 3.3,
+            "insurance_region": 3.3,
+            "income_level": 0.3,
+            "education_level": 0.4,
+            "occupation": 0.6,
+            "marital_status": 0.3,
+            "family_members": 0.6,
+            "policy_type": 0.9,
+            "policy_term": 0.4,
+            "premium_amount": 44.8,
+            "policy_start_date": 91.2,
+            "policy_end_date": 92.8,
+            "claim_history": 0.2,
+            "renewal": 0.2
+        }
+    },
+    "相关性分析": {
+        "policy_id": {
+            "policy_id": 1.0,
+            "age": -0.01,
+            "family_members": -0.01,
+            "premium_amount": 0.02
+        },
+        "age": {
+            "policy_id": -0.01,
+            "age": 1.0,
+            "family_members": 0.05,
+            "premium_amount": 0.19
+        },
+        "family_members": {
+            "policy_id": -0.01,
+            "age": 0.05,
+            "family_members": 1.0,
+            "premium_amount": 0.04
+        },
+        "premium_amount": {
+            "policy_id": 0.02,
+            "age": 0.19,
+            "family_members": 0.04,
+            "premium_amount": 1.0
+        }
+    }
+}

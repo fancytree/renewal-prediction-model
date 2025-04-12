@@ -1,0 +1,15 @@
+IF AND age <= 29.50 AND age_family_ratio <= 8.83 AND age <= 22.50 AND premium_per_age_standardized <= 0.06 -> No
+IF AND age <= 29.50 AND age_family_ratio <= 8.83 AND age <= 22.50 AND premium_per_age_standardized > 0.06 -> No
+IF AND age <= 29.50 AND age_family_ratio <= 8.83 AND age > 22.50 AND premium_per_family_member_standardized <= -0.58 -> Yes
+IF AND age <= 29.50 AND age_family_ratio <= 8.83 AND age > 22.50 AND premium_per_family_member_standardized > -0.58 -> No
+IF AND age <= 29.50 AND age_family_ratio > 8.83 AND premium_amount_standardized <= -0.38 AND premium_per_family_member_standardized <= -0.29 -> No
+IF AND age <= 29.50 AND age_family_ratio > 8.83 AND premium_amount_standardized <= -0.38 AND premium_per_family_member_standardized > -0.29 -> No
+IF AND age <= 29.50 AND age_family_ratio > 8.83 AND premium_amount_standardized > -0.38 -> No
+IF AND age > 29.50 AND age_group_>60 <= 0.50 AND age_family_ratio <= 21.00 AND age <= 33.50 -> Yes
+IF AND age > 29.50 AND age_group_>60 <= 0.50 AND age_family_ratio <= 21.00 AND age > 33.50 -> Yes
+IF AND age > 29.50 AND age_group_>60 <= 0.50 AND age_family_ratio > 21.00 AND age_group_40-50 <= 0.50 -> Yes
+IF AND age > 29.50 AND age_group_>60 <= 0.50 AND age_family_ratio > 21.00 AND age_group_40-50 > 0.50 -> Yes
+IF AND age > 29.50 AND age_group_>60 > 0.50 AND premium_per_family_member_standardized <= -0.41 AND premium_per_family_member_standardized <= -0.50 -> Yes
+IF AND age > 29.50 AND age_group_>60 > 0.50 AND premium_per_family_member_standardized <= -0.41 AND premium_per_family_member_standardized > -0.50 -> Yes
+IF AND age > 29.50 AND age_group_>60 > 0.50 AND premium_per_family_member_standardized > -0.41 AND premium_per_age_standardized <= -0.62 -> No
+IF AND age > 29.50 AND age_group_>60 > 0.50 AND premium_per_family_member_standardized > -0.41 AND premium_per_age_standardized > -0.62 -> No
